@@ -1,0 +1,108 @@
+html{
+    margin:0px;
+    padding:0px;
+
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jfif) no-repeat;
+    height:100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display:flex;
+    
+    width:85%;
+    margin:auto;
+    margin-top:20px;
+    justify-content: space-between;
+}
+.logo{
+    width : 200px;
+    height : 160px;
+    cursor:pointer;
+}
+.tabs li{
+    position: relative;
+    
+}
+.tabs li{
+    list-style: none;
+    margin:0px 20px;
+    font-family:sans-serif;
+    display:inline-block;
+    text-transform: uppercase;
+}
+.tabs a{
+    text-decoration:none;
+    color:white;
+}
+ul li::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:3px;
+    background:mediumspringgreen;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+ul li:hover::after{
+    width:100%;
+}
+.main{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
+h1{
+    font-size: 70px;
+    color:white;
+    text-transform: uppercase;
+}
+p{
+    color:white;
+    font-size:20px;
+    text-align: center;
+    margin-top:-10px;
+}
+button{
+    font-size:20px;
+    padding: 5px 20px;
+    border-radius:25px;
+    color:white;
+    text-align:center;
+    background:transparent;
+    border:2px solid rgb(15, 119, 122);
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    
+}
+
+button:hover{
+    scale:1;
+}
+span{
+    background:rgb(15, 119, 122);
+    width:0%;
+    height:100%;
+    left:0;
+    bottom:0;
+    position:absolute;
+    z-index:-1;
+    transition:0.5s;
+}
+button:hover span{
+    width:100%;
+    border:none;
+}
+button:hover{
+    border:none;
+}
