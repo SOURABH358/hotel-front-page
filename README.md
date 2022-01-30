@@ -1,5 +1,5 @@
 # hotel-front-page
-it contains a front page of a dummy hotel
+it contains a front page of a dummy hotel website
 
 you can see the working of the website here:
 
